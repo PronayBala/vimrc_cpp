@@ -2,7 +2,6 @@ call plug#begin()
 " Any valid git URL is allowed
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/lsdr/monokai.git'
-Plug 'https://github.com/octol/vim-cpp-enhanced-highlight.git'
 call plug#end()
 
 set guifont=Source_Code_Pro:h14
@@ -23,15 +22,6 @@ autocmd filetype cpp nnoremap <F10> :!%:r<CR><Enter>
 
 set guioptions -=T
 set belloff=all
-
-""config for cpp highlight
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
-let g:cpp_posix_standard = 1
-let g:cpp_experimental_simple_template_highlight = 1
-let g:cpp_experimental_template_highlight = 1
-let g:cpp_concepts_highlight = 1
 
 " Status Line Custom
 let g:currentmode={
